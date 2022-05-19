@@ -93,8 +93,8 @@ module Svg.Attributes exposing
 
 -}
 
-import Gren.Kernel.VirtualDom
 import Svg exposing (Attribute)
+import VirtualDom
 
 
 
@@ -104,1165 +104,1165 @@ import Svg exposing (Attribute)
 {-| -}
 accentHeight : String -> Attribute msg
 accentHeight =
-    Gren.Kernel.VirtualDom.attribute "accent-height"
+    VirtualDom.attribute "accent-height"
 
 
 {-| -}
 accelerate : String -> Attribute msg
 accelerate =
-    Gren.Kernel.VirtualDom.attribute "accelerate"
+    VirtualDom.attribute "accelerate"
 
 
 {-| -}
 accumulate : String -> Attribute msg
 accumulate =
-    Gren.Kernel.VirtualDom.attribute "accumulate"
+    VirtualDom.attribute "accumulate"
 
 
 {-| -}
 additive : String -> Attribute msg
 additive =
-    Gren.Kernel.VirtualDom.attribute "additive"
+    VirtualDom.attribute "additive"
 
 
 {-| -}
 alphabetic : String -> Attribute msg
 alphabetic =
-    Gren.Kernel.VirtualDom.attribute "alphabetic"
+    VirtualDom.attribute "alphabetic"
 
 
 {-| -}
 allowReorder : String -> Attribute msg
 allowReorder =
-    Gren.Kernel.VirtualDom.attribute "allowReorder"
+    VirtualDom.attribute "allowReorder"
 
 
 {-| -}
 amplitude : String -> Attribute msg
 amplitude =
-    Gren.Kernel.VirtualDom.attribute "amplitude"
+    VirtualDom.attribute "amplitude"
 
 
 {-| -}
 arabicForm : String -> Attribute msg
 arabicForm =
-    Gren.Kernel.VirtualDom.attribute "arabic-form"
+    VirtualDom.attribute "arabic-form"
 
 
 {-| -}
 ascent : String -> Attribute msg
 ascent =
-    Gren.Kernel.VirtualDom.attribute "ascent"
+    VirtualDom.attribute "ascent"
 
 
 {-| -}
 attributeName : String -> Attribute msg
 attributeName =
-    Gren.Kernel.VirtualDom.attribute "attributeName"
+    VirtualDom.attribute "attributeName"
 
 
 {-| -}
 attributeType : String -> Attribute msg
 attributeType =
-    Gren.Kernel.VirtualDom.attribute "attributeType"
+    VirtualDom.attribute "attributeType"
 
 
 {-| -}
 autoReverse : String -> Attribute msg
 autoReverse =
-    Gren.Kernel.VirtualDom.attribute "autoReverse"
+    VirtualDom.attribute "autoReverse"
 
 
 {-| -}
 azimuth : String -> Attribute msg
 azimuth =
-    Gren.Kernel.VirtualDom.attribute "azimuth"
+    VirtualDom.attribute "azimuth"
 
 
 {-| -}
 baseFrequency : String -> Attribute msg
 baseFrequency =
-    Gren.Kernel.VirtualDom.attribute "baseFrequency"
+    VirtualDom.attribute "baseFrequency"
 
 
 {-| -}
 baseProfile : String -> Attribute msg
 baseProfile =
-    Gren.Kernel.VirtualDom.attribute "baseProfile"
+    VirtualDom.attribute "baseProfile"
 
 
 {-| -}
 bbox : String -> Attribute msg
 bbox =
-    Gren.Kernel.VirtualDom.attribute "bbox"
+    VirtualDom.attribute "bbox"
 
 
 {-| -}
 begin : String -> Attribute msg
 begin =
-    Gren.Kernel.VirtualDom.attribute "begin"
+    VirtualDom.attribute "begin"
 
 
 {-| -}
 bias : String -> Attribute msg
 bias =
-    Gren.Kernel.VirtualDom.attribute "bias"
+    VirtualDom.attribute "bias"
 
 
 {-| -}
 by : String -> Attribute msg
-by value =
-    Gren.Kernel.VirtualDom.attribute "by" (Gren.Kernel.VirtualDom.noJavaScriptUri value)
+by =
+    VirtualDom.attribute "by"
 
 
 {-| -}
 calcMode : String -> Attribute msg
 calcMode =
-    Gren.Kernel.VirtualDom.attribute "calcMode"
+    VirtualDom.attribute "calcMode"
 
 
 {-| -}
 capHeight : String -> Attribute msg
 capHeight =
-    Gren.Kernel.VirtualDom.attribute "cap-height"
+    VirtualDom.attribute "cap-height"
 
 
 {-| -}
 class : String -> Attribute msg
 class =
-    Gren.Kernel.VirtualDom.attribute "class"
+    VirtualDom.attribute "class"
 
 
 {-| -}
 clipPathUnits : String -> Attribute msg
 clipPathUnits =
-    Gren.Kernel.VirtualDom.attribute "clipPathUnits"
+    VirtualDom.attribute "clipPathUnits"
 
 
 {-| -}
 contentScriptType : String -> Attribute msg
 contentScriptType =
-    Gren.Kernel.VirtualDom.attribute "contentScriptType"
+    VirtualDom.attribute "contentScriptType"
 
 
 {-| -}
 contentStyleType : String -> Attribute msg
 contentStyleType =
-    Gren.Kernel.VirtualDom.attribute "contentStyleType"
+    VirtualDom.attribute "contentStyleType"
 
 
 {-| -}
 cx : String -> Attribute msg
 cx =
-    Gren.Kernel.VirtualDom.attribute "cx"
+    VirtualDom.attribute "cx"
 
 
 {-| -}
 cy : String -> Attribute msg
 cy =
-    Gren.Kernel.VirtualDom.attribute "cy"
+    VirtualDom.attribute "cy"
 
 
 {-| -}
 d : String -> Attribute msg
 d =
-    Gren.Kernel.VirtualDom.attribute "d"
+    VirtualDom.attribute "d"
 
 
 {-| -}
 decelerate : String -> Attribute msg
 decelerate =
-    Gren.Kernel.VirtualDom.attribute "decelerate"
+    VirtualDom.attribute "decelerate"
 
 
 {-| -}
 descent : String -> Attribute msg
 descent =
-    Gren.Kernel.VirtualDom.attribute "descent"
+    VirtualDom.attribute "descent"
 
 
 {-| -}
 diffuseConstant : String -> Attribute msg
 diffuseConstant =
-    Gren.Kernel.VirtualDom.attribute "diffuseConstant"
+    VirtualDom.attribute "diffuseConstant"
 
 
 {-| -}
 divisor : String -> Attribute msg
 divisor =
-    Gren.Kernel.VirtualDom.attribute "divisor"
+    VirtualDom.attribute "divisor"
 
 
 {-| -}
 dur : String -> Attribute msg
 dur =
-    Gren.Kernel.VirtualDom.attribute "dur"
+    VirtualDom.attribute "dur"
 
 
 {-| -}
 dx : String -> Attribute msg
 dx =
-    Gren.Kernel.VirtualDom.attribute "dx"
+    VirtualDom.attribute "dx"
 
 
 {-| -}
 dy : String -> Attribute msg
 dy =
-    Gren.Kernel.VirtualDom.attribute "dy"
+    VirtualDom.attribute "dy"
 
 
 {-| -}
 edgeMode : String -> Attribute msg
 edgeMode =
-    Gren.Kernel.VirtualDom.attribute "edgeMode"
+    VirtualDom.attribute "edgeMode"
 
 
 {-| -}
 elevation : String -> Attribute msg
 elevation =
-    Gren.Kernel.VirtualDom.attribute "elevation"
+    VirtualDom.attribute "elevation"
 
 
 {-| -}
 end : String -> Attribute msg
 end =
-    Gren.Kernel.VirtualDom.attribute "end"
+    VirtualDom.attribute "end"
 
 
 {-| -}
 exponent : String -> Attribute msg
 exponent =
-    Gren.Kernel.VirtualDom.attribute "exponent"
+    VirtualDom.attribute "exponent"
 
 
 {-| -}
 externalResourcesRequired : String -> Attribute msg
 externalResourcesRequired =
-    Gren.Kernel.VirtualDom.attribute "externalResourcesRequired"
+    VirtualDom.attribute "externalResourcesRequired"
 
 
 {-| -}
 filterRes : String -> Attribute msg
 filterRes =
-    Gren.Kernel.VirtualDom.attribute "filterRes"
+    VirtualDom.attribute "filterRes"
 
 
 {-| -}
 filterUnits : String -> Attribute msg
 filterUnits =
-    Gren.Kernel.VirtualDom.attribute "filterUnits"
+    VirtualDom.attribute "filterUnits"
 
 
 {-| -}
 format : String -> Attribute msg
 format =
-    Gren.Kernel.VirtualDom.attribute "format"
+    VirtualDom.attribute "format"
 
 
 {-| -}
 from : String -> Attribute msg
-from value =
-    Gren.Kernel.VirtualDom.attribute "from" (Gren.Kernel.VirtualDom.noJavaScriptUri value)
+from =
+    VirtualDom.attribute "from"
 
 
 {-| -}
 fx : String -> Attribute msg
 fx =
-    Gren.Kernel.VirtualDom.attribute "fx"
+    VirtualDom.attribute "fx"
 
 
 {-| -}
 fy : String -> Attribute msg
 fy =
-    Gren.Kernel.VirtualDom.attribute "fy"
+    VirtualDom.attribute "fy"
 
 
 {-| -}
 g1 : String -> Attribute msg
 g1 =
-    Gren.Kernel.VirtualDom.attribute "g1"
+    VirtualDom.attribute "g1"
 
 
 {-| -}
 g2 : String -> Attribute msg
 g2 =
-    Gren.Kernel.VirtualDom.attribute "g2"
+    VirtualDom.attribute "g2"
 
 
 {-| -}
 glyphName : String -> Attribute msg
 glyphName =
-    Gren.Kernel.VirtualDom.attribute "glyph-name"
+    VirtualDom.attribute "glyph-name"
 
 
 {-| -}
 glyphRef : String -> Attribute msg
 glyphRef =
-    Gren.Kernel.VirtualDom.attribute "glyphRef"
+    VirtualDom.attribute "glyphRef"
 
 
 {-| -}
 gradientTransform : String -> Attribute msg
 gradientTransform =
-    Gren.Kernel.VirtualDom.attribute "gradientTransform"
+    VirtualDom.attribute "gradientTransform"
 
 
 {-| -}
 gradientUnits : String -> Attribute msg
 gradientUnits =
-    Gren.Kernel.VirtualDom.attribute "gradientUnits"
+    VirtualDom.attribute "gradientUnits"
 
 
 {-| -}
 hanging : String -> Attribute msg
 hanging =
-    Gren.Kernel.VirtualDom.attribute "hanging"
+    VirtualDom.attribute "hanging"
 
 
 {-| -}
 height : String -> Attribute msg
 height =
-    Gren.Kernel.VirtualDom.attribute "height"
+    VirtualDom.attribute "height"
 
 
 {-| -}
 horizAdvX : String -> Attribute msg
 horizAdvX =
-    Gren.Kernel.VirtualDom.attribute "horiz-adv-x"
+    VirtualDom.attribute "horiz-adv-x"
 
 
 {-| -}
 horizOriginX : String -> Attribute msg
 horizOriginX =
-    Gren.Kernel.VirtualDom.attribute "horiz-origin-x"
+    VirtualDom.attribute "horiz-origin-x"
 
 
 {-| -}
 horizOriginY : String -> Attribute msg
 horizOriginY =
-    Gren.Kernel.VirtualDom.attribute "horiz-origin-y"
+    VirtualDom.attribute "horiz-origin-y"
 
 
 {-| -}
 id : String -> Attribute msg
 id =
-    Gren.Kernel.VirtualDom.attribute "id"
+    VirtualDom.attribute "id"
 
 
 {-| -}
 ideographic : String -> Attribute msg
 ideographic =
-    Gren.Kernel.VirtualDom.attribute "ideographic"
+    VirtualDom.attribute "ideographic"
 
 
 {-| -}
 in_ : String -> Attribute msg
 in_ =
-    Gren.Kernel.VirtualDom.attribute "in"
+    VirtualDom.attribute "in"
 
 
 {-| -}
 in2 : String -> Attribute msg
 in2 =
-    Gren.Kernel.VirtualDom.attribute "in2"
+    VirtualDom.attribute "in2"
 
 
 {-| -}
 intercept : String -> Attribute msg
 intercept =
-    Gren.Kernel.VirtualDom.attribute "intercept"
+    VirtualDom.attribute "intercept"
 
 
 {-| -}
 k : String -> Attribute msg
 k =
-    Gren.Kernel.VirtualDom.attribute "k"
+    VirtualDom.attribute "k"
 
 
 {-| -}
 k1 : String -> Attribute msg
 k1 =
-    Gren.Kernel.VirtualDom.attribute "k1"
+    VirtualDom.attribute "k1"
 
 
 {-| -}
 k2 : String -> Attribute msg
 k2 =
-    Gren.Kernel.VirtualDom.attribute "k2"
+    VirtualDom.attribute "k2"
 
 
 {-| -}
 k3 : String -> Attribute msg
 k3 =
-    Gren.Kernel.VirtualDom.attribute "k3"
+    VirtualDom.attribute "k3"
 
 
 {-| -}
 k4 : String -> Attribute msg
 k4 =
-    Gren.Kernel.VirtualDom.attribute "k4"
+    VirtualDom.attribute "k4"
 
 
 {-| -}
 kernelMatrix : String -> Attribute msg
 kernelMatrix =
-    Gren.Kernel.VirtualDom.attribute "kernelMatrix"
+    VirtualDom.attribute "kernelMatrix"
 
 
 {-| -}
 kernelUnitLength : String -> Attribute msg
 kernelUnitLength =
-    Gren.Kernel.VirtualDom.attribute "kernelUnitLength"
+    VirtualDom.attribute "kernelUnitLength"
 
 
 {-| -}
 keyPoints : String -> Attribute msg
 keyPoints =
-    Gren.Kernel.VirtualDom.attribute "keyPoints"
+    VirtualDom.attribute "keyPoints"
 
 
 {-| -}
 keySplines : String -> Attribute msg
 keySplines =
-    Gren.Kernel.VirtualDom.attribute "keySplines"
+    VirtualDom.attribute "keySplines"
 
 
 {-| -}
 keyTimes : String -> Attribute msg
 keyTimes =
-    Gren.Kernel.VirtualDom.attribute "keyTimes"
+    VirtualDom.attribute "keyTimes"
 
 
 {-| -}
 lang : String -> Attribute msg
 lang =
-    Gren.Kernel.VirtualDom.attribute "lang"
+    VirtualDom.attribute "lang"
 
 
 {-| -}
 lengthAdjust : String -> Attribute msg
 lengthAdjust =
-    Gren.Kernel.VirtualDom.attribute "lengthAdjust"
+    VirtualDom.attribute "lengthAdjust"
 
 
 {-| -}
 limitingConeAngle : String -> Attribute msg
 limitingConeAngle =
-    Gren.Kernel.VirtualDom.attribute "limitingConeAngle"
+    VirtualDom.attribute "limitingConeAngle"
 
 
 {-| -}
 local : String -> Attribute msg
 local =
-    Gren.Kernel.VirtualDom.attribute "local"
+    VirtualDom.attribute "local"
 
 
 {-| -}
 markerHeight : String -> Attribute msg
 markerHeight =
-    Gren.Kernel.VirtualDom.attribute "markerHeight"
+    VirtualDom.attribute "markerHeight"
 
 
 {-| -}
 markerUnits : String -> Attribute msg
 markerUnits =
-    Gren.Kernel.VirtualDom.attribute "markerUnits"
+    VirtualDom.attribute "markerUnits"
 
 
 {-| -}
 markerWidth : String -> Attribute msg
 markerWidth =
-    Gren.Kernel.VirtualDom.attribute "markerWidth"
+    VirtualDom.attribute "markerWidth"
 
 
 {-| -}
 maskContentUnits : String -> Attribute msg
 maskContentUnits =
-    Gren.Kernel.VirtualDom.attribute "maskContentUnits"
+    VirtualDom.attribute "maskContentUnits"
 
 
 {-| -}
 maskUnits : String -> Attribute msg
 maskUnits =
-    Gren.Kernel.VirtualDom.attribute "maskUnits"
+    VirtualDom.attribute "maskUnits"
 
 
 {-| -}
 mathematical : String -> Attribute msg
 mathematical =
-    Gren.Kernel.VirtualDom.attribute "mathematical"
+    VirtualDom.attribute "mathematical"
 
 
 {-| -}
 max : String -> Attribute msg
 max =
-    Gren.Kernel.VirtualDom.attribute "max"
+    VirtualDom.attribute "max"
 
 
 {-| -}
 media : String -> Attribute msg
 media =
-    Gren.Kernel.VirtualDom.attribute "media"
+    VirtualDom.attribute "media"
 
 
 {-| -}
 method : String -> Attribute msg
 method =
-    Gren.Kernel.VirtualDom.attribute "method"
+    VirtualDom.attribute "method"
 
 
 {-| -}
 min : String -> Attribute msg
 min =
-    Gren.Kernel.VirtualDom.attribute "min"
+    VirtualDom.attribute "min"
 
 
 {-| -}
 mode : String -> Attribute msg
 mode =
-    Gren.Kernel.VirtualDom.attribute "mode"
+    VirtualDom.attribute "mode"
 
 
 {-| -}
 name : String -> Attribute msg
 name =
-    Gren.Kernel.VirtualDom.attribute "name"
+    VirtualDom.attribute "name"
 
 
 {-| -}
 numOctaves : String -> Attribute msg
 numOctaves =
-    Gren.Kernel.VirtualDom.attribute "numOctaves"
+    VirtualDom.attribute "numOctaves"
 
 
 {-| -}
 offset : String -> Attribute msg
 offset =
-    Gren.Kernel.VirtualDom.attribute "offset"
+    VirtualDom.attribute "offset"
 
 
 {-| -}
 operator : String -> Attribute msg
 operator =
-    Gren.Kernel.VirtualDom.attribute "operator"
+    VirtualDom.attribute "operator"
 
 
 {-| -}
 order : String -> Attribute msg
 order =
-    Gren.Kernel.VirtualDom.attribute "order"
+    VirtualDom.attribute "order"
 
 
 {-| -}
 orient : String -> Attribute msg
 orient =
-    Gren.Kernel.VirtualDom.attribute "orient"
+    VirtualDom.attribute "orient"
 
 
 {-| -}
 orientation : String -> Attribute msg
 orientation =
-    Gren.Kernel.VirtualDom.attribute "orientation"
+    VirtualDom.attribute "orientation"
 
 
 {-| -}
 origin : String -> Attribute msg
 origin =
-    Gren.Kernel.VirtualDom.attribute "origin"
+    VirtualDom.attribute "origin"
 
 
 {-| -}
 overlinePosition : String -> Attribute msg
 overlinePosition =
-    Gren.Kernel.VirtualDom.attribute "overline-position"
+    VirtualDom.attribute "overline-position"
 
 
 {-| -}
 overlineThickness : String -> Attribute msg
 overlineThickness =
-    Gren.Kernel.VirtualDom.attribute "overline-thickness"
+    VirtualDom.attribute "overline-thickness"
 
 
 {-| -}
 panose1 : String -> Attribute msg
 panose1 =
-    Gren.Kernel.VirtualDom.attribute "panose-1"
+    VirtualDom.attribute "panose-1"
 
 
 {-| -}
 path : String -> Attribute msg
 path =
-    Gren.Kernel.VirtualDom.attribute "path"
+    VirtualDom.attribute "path"
 
 
 {-| -}
 pathLength : String -> Attribute msg
 pathLength =
-    Gren.Kernel.VirtualDom.attribute "pathLength"
+    VirtualDom.attribute "pathLength"
 
 
 {-| -}
 patternContentUnits : String -> Attribute msg
 patternContentUnits =
-    Gren.Kernel.VirtualDom.attribute "patternContentUnits"
+    VirtualDom.attribute "patternContentUnits"
 
 
 {-| -}
 patternTransform : String -> Attribute msg
 patternTransform =
-    Gren.Kernel.VirtualDom.attribute "patternTransform"
+    VirtualDom.attribute "patternTransform"
 
 
 {-| -}
 patternUnits : String -> Attribute msg
 patternUnits =
-    Gren.Kernel.VirtualDom.attribute "patternUnits"
+    VirtualDom.attribute "patternUnits"
 
 
 {-| -}
 pointOrder : String -> Attribute msg
 pointOrder =
-    Gren.Kernel.VirtualDom.attribute "point-order"
+    VirtualDom.attribute "point-order"
 
 
 {-| -}
 points : String -> Attribute msg
 points =
-    Gren.Kernel.VirtualDom.attribute "points"
+    VirtualDom.attribute "points"
 
 
 {-| -}
 pointsAtX : String -> Attribute msg
 pointsAtX =
-    Gren.Kernel.VirtualDom.attribute "pointsAtX"
+    VirtualDom.attribute "pointsAtX"
 
 
 {-| -}
 pointsAtY : String -> Attribute msg
 pointsAtY =
-    Gren.Kernel.VirtualDom.attribute "pointsAtY"
+    VirtualDom.attribute "pointsAtY"
 
 
 {-| -}
 pointsAtZ : String -> Attribute msg
 pointsAtZ =
-    Gren.Kernel.VirtualDom.attribute "pointsAtZ"
+    VirtualDom.attribute "pointsAtZ"
 
 
 {-| -}
 preserveAlpha : String -> Attribute msg
 preserveAlpha =
-    Gren.Kernel.VirtualDom.attribute "preserveAlpha"
+    VirtualDom.attribute "preserveAlpha"
 
 
 {-| -}
 preserveAspectRatio : String -> Attribute msg
 preserveAspectRatio =
-    Gren.Kernel.VirtualDom.attribute "preserveAspectRatio"
+    VirtualDom.attribute "preserveAspectRatio"
 
 
 {-| -}
 primitiveUnits : String -> Attribute msg
 primitiveUnits =
-    Gren.Kernel.VirtualDom.attribute "primitiveUnits"
+    VirtualDom.attribute "primitiveUnits"
 
 
 {-| -}
 r : String -> Attribute msg
 r =
-    Gren.Kernel.VirtualDom.attribute "r"
+    VirtualDom.attribute "r"
 
 
 {-| -}
 radius : String -> Attribute msg
 radius =
-    Gren.Kernel.VirtualDom.attribute "radius"
+    VirtualDom.attribute "radius"
 
 
 {-| -}
 refX : String -> Attribute msg
 refX =
-    Gren.Kernel.VirtualDom.attribute "refX"
+    VirtualDom.attribute "refX"
 
 
 {-| -}
 refY : String -> Attribute msg
 refY =
-    Gren.Kernel.VirtualDom.attribute "refY"
+    VirtualDom.attribute "refY"
 
 
 {-| -}
 renderingIntent : String -> Attribute msg
 renderingIntent =
-    Gren.Kernel.VirtualDom.attribute "rendering-intent"
+    VirtualDom.attribute "rendering-intent"
 
 
 {-| -}
 repeatCount : String -> Attribute msg
 repeatCount =
-    Gren.Kernel.VirtualDom.attribute "repeatCount"
+    VirtualDom.attribute "repeatCount"
 
 
 {-| -}
 repeatDur : String -> Attribute msg
 repeatDur =
-    Gren.Kernel.VirtualDom.attribute "repeatDur"
+    VirtualDom.attribute "repeatDur"
 
 
 {-| -}
 requiredExtensions : String -> Attribute msg
 requiredExtensions =
-    Gren.Kernel.VirtualDom.attribute "requiredExtensions"
+    VirtualDom.attribute "requiredExtensions"
 
 
 {-| -}
 requiredFeatures : String -> Attribute msg
 requiredFeatures =
-    Gren.Kernel.VirtualDom.attribute "requiredFeatures"
+    VirtualDom.attribute "requiredFeatures"
 
 
 {-| -}
 restart : String -> Attribute msg
 restart =
-    Gren.Kernel.VirtualDom.attribute "restart"
+    VirtualDom.attribute "restart"
 
 
 {-| -}
 result : String -> Attribute msg
 result =
-    Gren.Kernel.VirtualDom.attribute "result"
+    VirtualDom.attribute "result"
 
 
 {-| -}
 rotate : String -> Attribute msg
 rotate =
-    Gren.Kernel.VirtualDom.attribute "rotate"
+    VirtualDom.attribute "rotate"
 
 
 {-| -}
 rx : String -> Attribute msg
 rx =
-    Gren.Kernel.VirtualDom.attribute "rx"
+    VirtualDom.attribute "rx"
 
 
 {-| -}
 ry : String -> Attribute msg
 ry =
-    Gren.Kernel.VirtualDom.attribute "ry"
+    VirtualDom.attribute "ry"
 
 
 {-| -}
 scale : String -> Attribute msg
 scale =
-    Gren.Kernel.VirtualDom.attribute "scale"
+    VirtualDom.attribute "scale"
 
 
 {-| -}
 seed : String -> Attribute msg
 seed =
-    Gren.Kernel.VirtualDom.attribute "seed"
+    VirtualDom.attribute "seed"
 
 
 {-| -}
 slope : String -> Attribute msg
 slope =
-    Gren.Kernel.VirtualDom.attribute "slope"
+    VirtualDom.attribute "slope"
 
 
 {-| -}
 spacing : String -> Attribute msg
 spacing =
-    Gren.Kernel.VirtualDom.attribute "spacing"
+    VirtualDom.attribute "spacing"
 
 
 {-| -}
 specularConstant : String -> Attribute msg
 specularConstant =
-    Gren.Kernel.VirtualDom.attribute "specularConstant"
+    VirtualDom.attribute "specularConstant"
 
 
 {-| -}
 specularExponent : String -> Attribute msg
 specularExponent =
-    Gren.Kernel.VirtualDom.attribute "specularExponent"
+    VirtualDom.attribute "specularExponent"
 
 
 {-| -}
 speed : String -> Attribute msg
 speed =
-    Gren.Kernel.VirtualDom.attribute "speed"
+    VirtualDom.attribute "speed"
 
 
 {-| -}
 spreadMethod : String -> Attribute msg
 spreadMethod =
-    Gren.Kernel.VirtualDom.attribute "spreadMethod"
+    VirtualDom.attribute "spreadMethod"
 
 
 {-| -}
 startOffset : String -> Attribute msg
 startOffset =
-    Gren.Kernel.VirtualDom.attribute "startOffset"
+    VirtualDom.attribute "startOffset"
 
 
 {-| -}
 stdDeviation : String -> Attribute msg
 stdDeviation =
-    Gren.Kernel.VirtualDom.attribute "stdDeviation"
+    VirtualDom.attribute "stdDeviation"
 
 
 {-| -}
 stemh : String -> Attribute msg
 stemh =
-    Gren.Kernel.VirtualDom.attribute "stemh"
+    VirtualDom.attribute "stemh"
 
 
 {-| -}
 stemv : String -> Attribute msg
 stemv =
-    Gren.Kernel.VirtualDom.attribute "stemv"
+    VirtualDom.attribute "stemv"
 
 
 {-| -}
 stitchTiles : String -> Attribute msg
 stitchTiles =
-    Gren.Kernel.VirtualDom.attribute "stitchTiles"
+    VirtualDom.attribute "stitchTiles"
 
 
 {-| -}
 strikethroughPosition : String -> Attribute msg
 strikethroughPosition =
-    Gren.Kernel.VirtualDom.attribute "strikethrough-position"
+    VirtualDom.attribute "strikethrough-position"
 
 
 {-| -}
 strikethroughThickness : String -> Attribute msg
 strikethroughThickness =
-    Gren.Kernel.VirtualDom.attribute "strikethrough-thickness"
+    VirtualDom.attribute "strikethrough-thickness"
 
 
 {-| -}
 string : String -> Attribute msg
 string =
-    Gren.Kernel.VirtualDom.attribute "string"
+    VirtualDom.attribute "string"
 
 
 {-| -}
 style : String -> Attribute msg
 style =
-    Gren.Kernel.VirtualDom.attribute "style"
+    VirtualDom.attribute "style"
 
 
 {-| -}
 surfaceScale : String -> Attribute msg
 surfaceScale =
-    Gren.Kernel.VirtualDom.attribute "surfaceScale"
+    VirtualDom.attribute "surfaceScale"
 
 
 {-| -}
 systemLanguage : String -> Attribute msg
 systemLanguage =
-    Gren.Kernel.VirtualDom.attribute "systemLanguage"
+    VirtualDom.attribute "systemLanguage"
 
 
 {-| -}
 tableValues : String -> Attribute msg
 tableValues =
-    Gren.Kernel.VirtualDom.attribute "tableValues"
+    VirtualDom.attribute "tableValues"
 
 
 {-| -}
 target : String -> Attribute msg
 target =
-    Gren.Kernel.VirtualDom.attribute "target"
+    VirtualDom.attribute "target"
 
 
 {-| -}
 targetX : String -> Attribute msg
 targetX =
-    Gren.Kernel.VirtualDom.attribute "targetX"
+    VirtualDom.attribute "targetX"
 
 
 {-| -}
 targetY : String -> Attribute msg
 targetY =
-    Gren.Kernel.VirtualDom.attribute "targetY"
+    VirtualDom.attribute "targetY"
 
 
 {-| -}
 textLength : String -> Attribute msg
 textLength =
-    Gren.Kernel.VirtualDom.attribute "textLength"
+    VirtualDom.attribute "textLength"
 
 
 {-| -}
 title : String -> Attribute msg
 title =
-    Gren.Kernel.VirtualDom.attribute "title"
+    VirtualDom.attribute "title"
 
 
 {-| -}
 to : String -> Attribute msg
-to value =
-    Gren.Kernel.VirtualDom.attribute "to" (Gren.Kernel.VirtualDom.noJavaScriptUri value)
+to =
+    VirtualDom.attribute "to"
 
 
 {-| -}
 transform : String -> Attribute msg
 transform =
-    Gren.Kernel.VirtualDom.attribute "transform"
+    VirtualDom.attribute "transform"
 
 
 {-| -}
 type_ : String -> Attribute msg
 type_ =
-    Gren.Kernel.VirtualDom.attribute "type"
+    VirtualDom.attribute "type"
 
 
 {-| -}
 u1 : String -> Attribute msg
 u1 =
-    Gren.Kernel.VirtualDom.attribute "u1"
+    VirtualDom.attribute "u1"
 
 
 {-| -}
 u2 : String -> Attribute msg
 u2 =
-    Gren.Kernel.VirtualDom.attribute "u2"
+    VirtualDom.attribute "u2"
 
 
 {-| -}
 underlinePosition : String -> Attribute msg
 underlinePosition =
-    Gren.Kernel.VirtualDom.attribute "underline-position"
+    VirtualDom.attribute "underline-position"
 
 
 {-| -}
 underlineThickness : String -> Attribute msg
 underlineThickness =
-    Gren.Kernel.VirtualDom.attribute "underline-thickness"
+    VirtualDom.attribute "underline-thickness"
 
 
 {-| -}
 unicode : String -> Attribute msg
 unicode =
-    Gren.Kernel.VirtualDom.attribute "unicode"
+    VirtualDom.attribute "unicode"
 
 
 {-| -}
 unicodeRange : String -> Attribute msg
 unicodeRange =
-    Gren.Kernel.VirtualDom.attribute "unicode-range"
+    VirtualDom.attribute "unicode-range"
 
 
 {-| -}
 unitsPerEm : String -> Attribute msg
 unitsPerEm =
-    Gren.Kernel.VirtualDom.attribute "units-per-em"
+    VirtualDom.attribute "units-per-em"
 
 
 {-| -}
 vAlphabetic : String -> Attribute msg
 vAlphabetic =
-    Gren.Kernel.VirtualDom.attribute "v-alphabetic"
+    VirtualDom.attribute "v-alphabetic"
 
 
 {-| -}
 vHanging : String -> Attribute msg
 vHanging =
-    Gren.Kernel.VirtualDom.attribute "v-hanging"
+    VirtualDom.attribute "v-hanging"
 
 
 {-| -}
 vIdeographic : String -> Attribute msg
 vIdeographic =
-    Gren.Kernel.VirtualDom.attribute "v-ideographic"
+    VirtualDom.attribute "v-ideographic"
 
 
 {-| -}
 vMathematical : String -> Attribute msg
 vMathematical =
-    Gren.Kernel.VirtualDom.attribute "v-mathematical"
+    VirtualDom.attribute "v-mathematical"
 
 
 {-| -}
 values : String -> Attribute msg
-values value =
-    Gren.Kernel.VirtualDom.attribute "values" (Gren.Kernel.VirtualDom.noJavaScriptUri value)
+values =
+    VirtualDom.attribute "values"
 
 
 {-| -}
 version : String -> Attribute msg
 version =
-    Gren.Kernel.VirtualDom.attribute "version"
+    VirtualDom.attribute "version"
 
 
 {-| -}
 vertAdvY : String -> Attribute msg
 vertAdvY =
-    Gren.Kernel.VirtualDom.attribute "vert-adv-y"
+    VirtualDom.attribute "vert-adv-y"
 
 
 {-| -}
 vertOriginX : String -> Attribute msg
 vertOriginX =
-    Gren.Kernel.VirtualDom.attribute "vert-origin-x"
+    VirtualDom.attribute "vert-origin-x"
 
 
 {-| -}
 vertOriginY : String -> Attribute msg
 vertOriginY =
-    Gren.Kernel.VirtualDom.attribute "vert-origin-y"
+    VirtualDom.attribute "vert-origin-y"
 
 
 {-| -}
 viewBox : String -> Attribute msg
 viewBox =
-    Gren.Kernel.VirtualDom.attribute "viewBox"
+    VirtualDom.attribute "viewBox"
 
 
 {-| -}
 viewTarget : String -> Attribute msg
 viewTarget =
-    Gren.Kernel.VirtualDom.attribute "viewTarget"
+    VirtualDom.attribute "viewTarget"
 
 
 {-| -}
 width : String -> Attribute msg
 width =
-    Gren.Kernel.VirtualDom.attribute "width"
+    VirtualDom.attribute "width"
 
 
 {-| -}
 widths : String -> Attribute msg
 widths =
-    Gren.Kernel.VirtualDom.attribute "widths"
+    VirtualDom.attribute "widths"
 
 
 {-| -}
 x : String -> Attribute msg
 x =
-    Gren.Kernel.VirtualDom.attribute "x"
+    VirtualDom.attribute "x"
 
 
 {-| -}
 xHeight : String -> Attribute msg
 xHeight =
-    Gren.Kernel.VirtualDom.attribute "x-height"
+    VirtualDom.attribute "x-height"
 
 
 {-| -}
 x1 : String -> Attribute msg
 x1 =
-    Gren.Kernel.VirtualDom.attribute "x1"
+    VirtualDom.attribute "x1"
 
 
 {-| -}
 x2 : String -> Attribute msg
 x2 =
-    Gren.Kernel.VirtualDom.attribute "x2"
+    VirtualDom.attribute "x2"
 
 
 {-| -}
 xChannelSelector : String -> Attribute msg
 xChannelSelector =
-    Gren.Kernel.VirtualDom.attribute "xChannelSelector"
+    VirtualDom.attribute "xChannelSelector"
 
 
 {-| -}
 xlinkActuate : String -> Attribute msg
 xlinkActuate =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:actuate"
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:actuate"
 
 
 {-| -}
 xlinkArcrole : String -> Attribute msg
 xlinkArcrole =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:arcrole"
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:arcrole"
 
 
 {-| -}
 xlinkHref : String -> Attribute msg
-xlinkHref value =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:href" (Gren.Kernel.VirtualDom.noJavaScriptUri value)
+xlinkHref =
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:href"
 
 
 {-| -}
 xlinkRole : String -> Attribute msg
 xlinkRole =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:role"
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:role"
 
 
 {-| -}
 xlinkShow : String -> Attribute msg
 xlinkShow =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:show"
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:show"
 
 
 {-| -}
 xlinkTitle : String -> Attribute msg
 xlinkTitle =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:title"
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:title"
 
 
 {-| -}
 xlinkType : String -> Attribute msg
 xlinkType =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:type"
+    VirtualDom.attributeNS "http://www.w3.org/1999/xlink" "xlink:type"
 
 
 {-| -}
 xmlBase : String -> Attribute msg
 xmlBase =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/XML/1998/namespace" "xml:base"
+    VirtualDom.attributeNS "http://www.w3.org/XML/1998/namespace" "xml:base"
 
 
 {-| -}
 xmlLang : String -> Attribute msg
 xmlLang =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/XML/1998/namespace" "xml:lang"
+    VirtualDom.attributeNS "http://www.w3.org/XML/1998/namespace" "xml:lang"
 
 
 {-| -}
 xmlSpace : String -> Attribute msg
 xmlSpace =
-    Gren.Kernel.VirtualDom.attributeNS "http://www.w3.org/XML/1998/namespace" "xml:space"
+    VirtualDom.attributeNS "http://www.w3.org/XML/1998/namespace" "xml:space"
 
 
 {-| -}
 y : String -> Attribute msg
 y =
-    Gren.Kernel.VirtualDom.attribute "y"
+    VirtualDom.attribute "y"
 
 
 {-| -}
 y1 : String -> Attribute msg
 y1 =
-    Gren.Kernel.VirtualDom.attribute "y1"
+    VirtualDom.attribute "y1"
 
 
 {-| -}
 y2 : String -> Attribute msg
 y2 =
-    Gren.Kernel.VirtualDom.attribute "y2"
+    VirtualDom.attribute "y2"
 
 
 {-| -}
 yChannelSelector : String -> Attribute msg
 yChannelSelector =
-    Gren.Kernel.VirtualDom.attribute "yChannelSelector"
+    VirtualDom.attribute "yChannelSelector"
 
 
 {-| -}
 z : String -> Attribute msg
 z =
-    Gren.Kernel.VirtualDom.attribute "z"
+    VirtualDom.attribute "z"
 
 
 {-| -}
 zoomAndPan : String -> Attribute msg
 zoomAndPan =
-    Gren.Kernel.VirtualDom.attribute "zoomAndPan"
+    VirtualDom.attribute "zoomAndPan"
 
 
 
@@ -1272,352 +1272,352 @@ zoomAndPan =
 {-| -}
 alignmentBaseline : String -> Attribute msg
 alignmentBaseline =
-    Gren.Kernel.VirtualDom.attribute "alignment-baseline"
+    VirtualDom.attribute "alignment-baseline"
 
 
 {-| -}
 baselineShift : String -> Attribute msg
 baselineShift =
-    Gren.Kernel.VirtualDom.attribute "baseline-shift"
+    VirtualDom.attribute "baseline-shift"
 
 
 {-| -}
 clipPath : String -> Attribute msg
 clipPath =
-    Gren.Kernel.VirtualDom.attribute "clip-path"
+    VirtualDom.attribute "clip-path"
 
 
 {-| -}
 clipRule : String -> Attribute msg
 clipRule =
-    Gren.Kernel.VirtualDom.attribute "clip-rule"
+    VirtualDom.attribute "clip-rule"
 
 
 {-| -}
 clip : String -> Attribute msg
 clip =
-    Gren.Kernel.VirtualDom.attribute "clip"
+    VirtualDom.attribute "clip"
 
 
 {-| -}
 colorInterpolationFilters : String -> Attribute msg
 colorInterpolationFilters =
-    Gren.Kernel.VirtualDom.attribute "color-interpolation-filters"
+    VirtualDom.attribute "color-interpolation-filters"
 
 
 {-| -}
 colorInterpolation : String -> Attribute msg
 colorInterpolation =
-    Gren.Kernel.VirtualDom.attribute "color-interpolation"
+    VirtualDom.attribute "color-interpolation"
 
 
 {-| -}
 colorProfile : String -> Attribute msg
 colorProfile =
-    Gren.Kernel.VirtualDom.attribute "color-profile"
+    VirtualDom.attribute "color-profile"
 
 
 {-| -}
 colorRendering : String -> Attribute msg
 colorRendering =
-    Gren.Kernel.VirtualDom.attribute "color-rendering"
+    VirtualDom.attribute "color-rendering"
 
 
 {-| -}
 color : String -> Attribute msg
 color =
-    Gren.Kernel.VirtualDom.attribute "color"
+    VirtualDom.attribute "color"
 
 
 {-| -}
 cursor : String -> Attribute msg
 cursor =
-    Gren.Kernel.VirtualDom.attribute "cursor"
+    VirtualDom.attribute "cursor"
 
 
 {-| -}
 direction : String -> Attribute msg
 direction =
-    Gren.Kernel.VirtualDom.attribute "direction"
+    VirtualDom.attribute "direction"
 
 
 {-| -}
 display : String -> Attribute msg
 display =
-    Gren.Kernel.VirtualDom.attribute "display"
+    VirtualDom.attribute "display"
 
 
 {-| -}
 dominantBaseline : String -> Attribute msg
 dominantBaseline =
-    Gren.Kernel.VirtualDom.attribute "dominant-baseline"
+    VirtualDom.attribute "dominant-baseline"
 
 
 {-| -}
 enableBackground : String -> Attribute msg
 enableBackground =
-    Gren.Kernel.VirtualDom.attribute "enable-background"
+    VirtualDom.attribute "enable-background"
 
 
 {-| -}
 fillOpacity : String -> Attribute msg
 fillOpacity =
-    Gren.Kernel.VirtualDom.attribute "fill-opacity"
+    VirtualDom.attribute "fill-opacity"
 
 
 {-| -}
 fillRule : String -> Attribute msg
 fillRule =
-    Gren.Kernel.VirtualDom.attribute "fill-rule"
+    VirtualDom.attribute "fill-rule"
 
 
 {-| -}
 fill : String -> Attribute msg
 fill =
-    Gren.Kernel.VirtualDom.attribute "fill"
+    VirtualDom.attribute "fill"
 
 
 {-| -}
 filter : String -> Attribute msg
 filter =
-    Gren.Kernel.VirtualDom.attribute "filter"
+    VirtualDom.attribute "filter"
 
 
 {-| -}
 floodColor : String -> Attribute msg
 floodColor =
-    Gren.Kernel.VirtualDom.attribute "flood-color"
+    VirtualDom.attribute "flood-color"
 
 
 {-| -}
 floodOpacity : String -> Attribute msg
 floodOpacity =
-    Gren.Kernel.VirtualDom.attribute "flood-opacity"
+    VirtualDom.attribute "flood-opacity"
 
 
 {-| -}
 fontFamily : String -> Attribute msg
 fontFamily =
-    Gren.Kernel.VirtualDom.attribute "font-family"
+    VirtualDom.attribute "font-family"
 
 
 {-| -}
 fontSizeAdjust : String -> Attribute msg
 fontSizeAdjust =
-    Gren.Kernel.VirtualDom.attribute "font-size-adjust"
+    VirtualDom.attribute "font-size-adjust"
 
 
 {-| -}
 fontSize : String -> Attribute msg
 fontSize =
-    Gren.Kernel.VirtualDom.attribute "font-size"
+    VirtualDom.attribute "font-size"
 
 
 {-| -}
 fontStretch : String -> Attribute msg
 fontStretch =
-    Gren.Kernel.VirtualDom.attribute "font-stretch"
+    VirtualDom.attribute "font-stretch"
 
 
 {-| -}
 fontStyle : String -> Attribute msg
 fontStyle =
-    Gren.Kernel.VirtualDom.attribute "font-style"
+    VirtualDom.attribute "font-style"
 
 
 {-| -}
 fontVariant : String -> Attribute msg
 fontVariant =
-    Gren.Kernel.VirtualDom.attribute "font-variant"
+    VirtualDom.attribute "font-variant"
 
 
 {-| -}
 fontWeight : String -> Attribute msg
 fontWeight =
-    Gren.Kernel.VirtualDom.attribute "font-weight"
+    VirtualDom.attribute "font-weight"
 
 
 {-| -}
 glyphOrientationHorizontal : String -> Attribute msg
 glyphOrientationHorizontal =
-    Gren.Kernel.VirtualDom.attribute "glyph-orientation-horizontal"
+    VirtualDom.attribute "glyph-orientation-horizontal"
 
 
 {-| -}
 glyphOrientationVertical : String -> Attribute msg
 glyphOrientationVertical =
-    Gren.Kernel.VirtualDom.attribute "glyph-orientation-vertical"
+    VirtualDom.attribute "glyph-orientation-vertical"
 
 
 {-| -}
 imageRendering : String -> Attribute msg
 imageRendering =
-    Gren.Kernel.VirtualDom.attribute "image-rendering"
+    VirtualDom.attribute "image-rendering"
 
 
 {-| -}
 kerning : String -> Attribute msg
 kerning =
-    Gren.Kernel.VirtualDom.attribute "kerning"
+    VirtualDom.attribute "kerning"
 
 
 {-| -}
 letterSpacing : String -> Attribute msg
 letterSpacing =
-    Gren.Kernel.VirtualDom.attribute "letter-spacing"
+    VirtualDom.attribute "letter-spacing"
 
 
 {-| -}
 lightingColor : String -> Attribute msg
 lightingColor =
-    Gren.Kernel.VirtualDom.attribute "lighting-color"
+    VirtualDom.attribute "lighting-color"
 
 
 {-| -}
 markerEnd : String -> Attribute msg
 markerEnd =
-    Gren.Kernel.VirtualDom.attribute "marker-end"
+    VirtualDom.attribute "marker-end"
 
 
 {-| -}
 markerMid : String -> Attribute msg
 markerMid =
-    Gren.Kernel.VirtualDom.attribute "marker-mid"
+    VirtualDom.attribute "marker-mid"
 
 
 {-| -}
 markerStart : String -> Attribute msg
 markerStart =
-    Gren.Kernel.VirtualDom.attribute "marker-start"
+    VirtualDom.attribute "marker-start"
 
 
 {-| -}
 mask : String -> Attribute msg
 mask =
-    Gren.Kernel.VirtualDom.attribute "mask"
+    VirtualDom.attribute "mask"
 
 
 {-| -}
 opacity : String -> Attribute msg
 opacity =
-    Gren.Kernel.VirtualDom.attribute "opacity"
+    VirtualDom.attribute "opacity"
 
 
 {-| -}
 overflow : String -> Attribute msg
 overflow =
-    Gren.Kernel.VirtualDom.attribute "overflow"
+    VirtualDom.attribute "overflow"
 
 
 {-| -}
 pointerEvents : String -> Attribute msg
 pointerEvents =
-    Gren.Kernel.VirtualDom.attribute "pointer-events"
+    VirtualDom.attribute "pointer-events"
 
 
 {-| -}
 shapeRendering : String -> Attribute msg
 shapeRendering =
-    Gren.Kernel.VirtualDom.attribute "shape-rendering"
+    VirtualDom.attribute "shape-rendering"
 
 
 {-| -}
 stopColor : String -> Attribute msg
 stopColor =
-    Gren.Kernel.VirtualDom.attribute "stop-color"
+    VirtualDom.attribute "stop-color"
 
 
 {-| -}
 stopOpacity : String -> Attribute msg
 stopOpacity =
-    Gren.Kernel.VirtualDom.attribute "stop-opacity"
+    VirtualDom.attribute "stop-opacity"
 
 
 {-| -}
 strokeDasharray : String -> Attribute msg
 strokeDasharray =
-    Gren.Kernel.VirtualDom.attribute "stroke-dasharray"
+    VirtualDom.attribute "stroke-dasharray"
 
 
 {-| -}
 strokeDashoffset : String -> Attribute msg
 strokeDashoffset =
-    Gren.Kernel.VirtualDom.attribute "stroke-dashoffset"
+    VirtualDom.attribute "stroke-dashoffset"
 
 
 {-| -}
 strokeLinecap : String -> Attribute msg
 strokeLinecap =
-    Gren.Kernel.VirtualDom.attribute "stroke-linecap"
+    VirtualDom.attribute "stroke-linecap"
 
 
 {-| -}
 strokeLinejoin : String -> Attribute msg
 strokeLinejoin =
-    Gren.Kernel.VirtualDom.attribute "stroke-linejoin"
+    VirtualDom.attribute "stroke-linejoin"
 
 
 {-| -}
 strokeMiterlimit : String -> Attribute msg
 strokeMiterlimit =
-    Gren.Kernel.VirtualDom.attribute "stroke-miterlimit"
+    VirtualDom.attribute "stroke-miterlimit"
 
 
 {-| -}
 strokeOpacity : String -> Attribute msg
 strokeOpacity =
-    Gren.Kernel.VirtualDom.attribute "stroke-opacity"
+    VirtualDom.attribute "stroke-opacity"
 
 
 {-| -}
 strokeWidth : String -> Attribute msg
 strokeWidth =
-    Gren.Kernel.VirtualDom.attribute "stroke-width"
+    VirtualDom.attribute "stroke-width"
 
 
 {-| -}
 stroke : String -> Attribute msg
 stroke =
-    Gren.Kernel.VirtualDom.attribute "stroke"
+    VirtualDom.attribute "stroke"
 
 
 {-| -}
 textAnchor : String -> Attribute msg
 textAnchor =
-    Gren.Kernel.VirtualDom.attribute "text-anchor"
+    VirtualDom.attribute "text-anchor"
 
 
 {-| -}
 textDecoration : String -> Attribute msg
 textDecoration =
-    Gren.Kernel.VirtualDom.attribute "text-decoration"
+    VirtualDom.attribute "text-decoration"
 
 
 {-| -}
 textRendering : String -> Attribute msg
 textRendering =
-    Gren.Kernel.VirtualDom.attribute "text-rendering"
+    VirtualDom.attribute "text-rendering"
 
 
 {-| -}
 unicodeBidi : String -> Attribute msg
 unicodeBidi =
-    Gren.Kernel.VirtualDom.attribute "unicode-bidi"
+    VirtualDom.attribute "unicode-bidi"
 
 
 {-| -}
 visibility : String -> Attribute msg
 visibility =
-    Gren.Kernel.VirtualDom.attribute "visibility"
+    VirtualDom.attribute "visibility"
 
 
 {-| -}
 wordSpacing : String -> Attribute msg
 wordSpacing =
-    Gren.Kernel.VirtualDom.attribute "word-spacing"
+    VirtualDom.attribute "word-spacing"
 
 
 {-| -}
 writingMode : String -> Attribute msg
 writingMode =
-    Gren.Kernel.VirtualDom.attribute "writing-mode"
+    VirtualDom.attribute "writing-mode"

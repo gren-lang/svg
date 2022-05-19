@@ -81,11 +81,12 @@ If this is confusing, work through the [Gren Architecture Tutorial][gren-archite
 It really helps!
 
 [aEL]: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
 <!---
 TODO: Update urls:
 -->
 [decoder]: /packages/gren-lang/json/latest/Json-Decode
-[gren-architecture-tutorial]: 
+[gren-architecture-tutorial]:
 
 **Note:** This creates a [passive] event listener, enabling optimizations for
 touch, scroll, and wheel events in some browsers.
@@ -110,7 +111,7 @@ touch, scroll, and wheel events in some browsers.
 [passive]: https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
 
 -}
-stopPropagationOn : String -> Json.Decoder { msg : msg, stopPropagation : Bool } -> Attribute msg
+stopPropagationOn : String -> Json.Decoder { message : msg, stopPropagation : Bool } -> Attribute msg
 stopPropagationOn =
     Html.stopPropagationOn
 
@@ -128,12 +129,12 @@ default behavior:
     onSubmit msg =
         preventDefaultOn "submit" (Json.map alwaysPreventDefault (Json.succeed msg))
 
-    alwaysPreventDefault : msg -> ( msg, Bool )
+    alwaysPreventDefault : msg -> { message : msg, preventDefault : Bool }
     alwaysPreventDefault msg =
-        ( msg, True )
+        { message = msg, preventDefault = True }
 
 -}
-preventDefaultOn : String -> Json.Decoder { msg : msg, preventDefault : Bool } -> Attribute msg
+preventDefaultOn : String -> Json.Decoder { message : msg, preventDefault : Bool } -> Attribute msg
 preventDefaultOn =
     Html.preventDefaultOn
 

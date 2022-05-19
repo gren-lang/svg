@@ -61,10 +61,8 @@ module Svg exposing
 -}
 
 
-import Gren.Kernel.VirtualDom
 import Html
 import VirtualDom
-import Json.Encode as Json
 
 
 
@@ -89,14 +87,14 @@ type alias Attribute msg =
 
 {-| Create any SVG node. To create a `<rect>` helper function, you would write:
 
-    rect : List (Attribute msg) -> List (Svg msg) -> Svg msg
+    rect : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
     rect attributes children =
         node "rect" attributes children
 
 You should always be able to use the helper functions already defined in this
 library though!
 -}
-node : String -> List (Attribute msg) -> List (Svg msg) -> Svg msg
+node : String -> Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 node =
   VirtualDom.nodeNS "http://www.w3.org/2000/svg"
 
@@ -121,9 +119,9 @@ map =
 -- HELPERS
 
 
-trustedNode : String -> List (Attribute msg) -> List (Svg msg) -> Svg msg
+trustedNode : String -> Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 trustedNode =
-  Gren.Kernel.VirtualDom.nodeNS "http://www.w3.org/2000/svg"
+  VirtualDom.nodeNS "http://www.w3.org/2000/svg"
 
 
 
@@ -141,13 +139,13 @@ containing a rounded rectangle:
           [ width "120", height "120", viewBox "0 0 120 120" ]
           [ rect [ x "10", y "10", width "100", height "100", rx "15", ry "15" ] [] ]
 -}
-svg : List (Html.Attribute msg) -> List (Svg msg) -> Html.Html msg
+svg : Array (Html.Attribute msg) -> Array (Svg msg) -> Html.Html msg
 svg =
   trustedNode "svg"
 
 
 {-|-}
-foreignObject : List (Attribute msg) -> List (Html.Html msg) -> Svg msg
+foreignObject : Array (Attribute msg) -> Array (Html.Html msg) -> Svg msg
 foreignObject =
   trustedNode "foreignObject"
 
@@ -156,37 +154,37 @@ foreignObject =
 
 
 {-|-}
-animate : List (Attribute msg) -> List (Svg msg) -> Svg msg
+animate : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 animate =
   trustedNode "animate"
 
 
 {-|-}
-animateColor : List (Attribute msg) -> List (Svg msg) -> Svg msg
+animateColor : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 animateColor =
   trustedNode "animateColor"
 
 
 {-|-}
-animateMotion : List (Attribute msg) -> List (Svg msg) -> Svg msg
+animateMotion : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 animateMotion =
   trustedNode "animateMotion"
 
 
 {-|-}
-animateTransform : List (Attribute msg) -> List (Svg msg) -> Svg msg
+animateTransform : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 animateTransform =
   trustedNode "animateTransform"
 
 
 {-|-}
-mpath : List (Attribute msg) -> List (Svg msg) -> Svg msg
+mpath : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 mpath =
   trustedNode "mpath"
 
 
 {-|-}
-set : List (Attribute msg) -> List (Svg msg) -> Svg msg
+set : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 set =
   trustedNode "set"
 
@@ -197,49 +195,49 @@ set =
 
 {-| The SVG Anchor Element defines a hyperlink.
 -}
-a : List (Attribute msg) -> List (Svg msg) -> Svg msg
+a : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 a =
   trustedNode "a"
 
 
 {-|-}
-defs : List (Attribute msg) -> List (Svg msg) -> Svg msg
+defs : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 defs =
   trustedNode "defs"
 
 
 {-|-}
-g : List (Attribute msg) -> List (Svg msg) -> Svg msg
+g : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 g =
   trustedNode "g"
 
 
 {-|-}
-marker : List (Attribute msg) -> List (Svg msg) -> Svg msg
+marker : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 marker =
   trustedNode "marker"
 
 
 {-|-}
-mask : List (Attribute msg) -> List (Svg msg) -> Svg msg
+mask : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 mask =
   trustedNode "mask"
 
 
 {-|-}
-pattern : List (Attribute msg) -> List (Svg msg) -> Svg msg
+pattern : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 pattern =
   trustedNode "pattern"
 
 
 {-|-}
-switch : List (Attribute msg) -> List (Svg msg) -> Svg msg
+switch : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 switch =
   trustedNode "switch"
 
 
 {-|-}
-symbol : List (Attribute msg) -> List (Svg msg) -> Svg msg
+symbol : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 symbol =
   trustedNode "symbol"
 
@@ -249,19 +247,19 @@ symbol =
 
 
 {-|-}
-desc : List (Attribute msg) -> List (Svg msg) -> Svg msg
+desc : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 desc =
   trustedNode "desc"
 
 
 {-|-}
-metadata : List (Attribute msg) -> List (Svg msg) -> Svg msg
+metadata : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 metadata =
   trustedNode "metadata"
 
 
 {-|-}
-title : List (Attribute msg) -> List (Svg msg) -> Svg msg
+title : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 title =
   trustedNode "title"
 
@@ -271,127 +269,127 @@ title =
 
 
 {-|-}
-feBlend : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feBlend : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feBlend =
   trustedNode "feBlend"
 
 
 {-|-}
-feColorMatrix : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feColorMatrix : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feColorMatrix =
   trustedNode "feColorMatrix"
 
 
 {-|-}
-feComponentTransfer : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feComponentTransfer : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feComponentTransfer =
   trustedNode "feComponentTransfer"
 
 
 {-|-}
-feComposite : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feComposite : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feComposite =
   trustedNode "feComposite"
 
 
 {-|-}
-feConvolveMatrix : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feConvolveMatrix : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feConvolveMatrix =
   trustedNode "feConvolveMatrix"
 
 
 {-|-}
-feDiffuseLighting : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feDiffuseLighting : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feDiffuseLighting =
   trustedNode "feDiffuseLighting"
 
 
 {-|-}
-feDisplacementMap : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feDisplacementMap : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feDisplacementMap =
   trustedNode "feDisplacementMap"
 
 
 {-|-}
-feFlood : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feFlood : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feFlood =
   trustedNode "feFlood"
 
 
 {-|-}
-feFuncA : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feFuncA : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feFuncA =
   trustedNode "feFuncA"
 
 
 {-|-}
-feFuncB : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feFuncB : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feFuncB =
   trustedNode "feFuncB"
 
 
 {-|-}
-feFuncG : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feFuncG : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feFuncG =
   trustedNode "feFuncG"
 
 
 {-|-}
-feFuncR : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feFuncR : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feFuncR =
   trustedNode "feFuncR"
 
 
 {-|-}
-feGaussianBlur : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feGaussianBlur : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feGaussianBlur =
   trustedNode "feGaussianBlur"
 
 
 {-|-}
-feImage : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feImage : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feImage =
   trustedNode "feImage"
 
 
 {-|-}
-feMerge : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feMerge : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feMerge =
   trustedNode "feMerge"
 
 
 {-|-}
-feMergeNode : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feMergeNode : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feMergeNode =
   trustedNode "feMergeNode"
 
 
 {-|-}
-feMorphology : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feMorphology : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feMorphology =
   trustedNode "feMorphology"
 
 
 {-|-}
-feOffset : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feOffset : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feOffset =
   trustedNode "feOffset"
 
 
 {-|-}
-feSpecularLighting : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feSpecularLighting : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feSpecularLighting =
   trustedNode "feSpecularLighting"
 
 
 {-|-}
-feTile : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feTile : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feTile =
   trustedNode "feTile"
 
 
 {-|-}
-feTurbulence : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feTurbulence : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feTurbulence =
   trustedNode "feTurbulence"
 
@@ -401,7 +399,7 @@ feTurbulence =
 
 
 {-|-}
-font : List (Attribute msg) -> List (Svg msg) -> Svg msg
+font : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 font =
   trustedNode "font"
 
@@ -411,19 +409,19 @@ font =
 
 
 {-|-}
-linearGradient : List (Attribute msg) -> List (Svg msg) -> Svg msg
+linearGradient : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 linearGradient =
   trustedNode "linearGradient"
 
 
 {-|-}
-radialGradient : List (Attribute msg) -> List (Svg msg) -> Svg msg
+radialGradient : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 radialGradient =
   trustedNode "radialGradient"
 
 
 {-|-}
-stop : List (Attribute msg) -> List (Svg msg) -> Svg msg
+stop : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 stop =
   trustedNode "stop"
 
@@ -437,37 +435,37 @@ a center point and a radius.
 
     circle [ cx "60", cy "60", r "50" ] []
 -}
-circle : List (Attribute msg) -> List (Svg msg) -> Svg msg
+circle : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 circle =
   trustedNode "circle"
 
 
 {-|-}
-ellipse : List (Attribute msg) -> List (Svg msg) -> Svg msg
+ellipse : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 ellipse =
   trustedNode "ellipse"
 
 
 {-|-}
-image : List (Attribute msg) -> List (Svg msg) -> Svg msg
+image : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 image =
   trustedNode "image"
 
 
 {-|-}
-line : List (Attribute msg) -> List (Svg msg) -> Svg msg
+line : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 line =
   trustedNode "line"
 
 
 {-|-}
-path : List (Attribute msg) -> List (Svg msg) -> Svg msg
+path : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 path =
   trustedNode "path"
 
 
 {-|-}
-polygon : List (Attribute msg) -> List (Svg msg) -> Svg msg
+polygon : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 polygon =
   trustedNode "polygon"
 
@@ -478,19 +476,19 @@ create open shapes.
 
     polyline [ fill "none", stroke "black", points "20,100 40,60 70,80 100,20" ] []
 -}
-polyline : List (Attribute msg) -> List (Svg msg) -> Svg msg
+polyline : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 polyline =
   trustedNode "polyline"
 
 
 {-|-}
-rect : List (Attribute msg) -> List (Svg msg) -> Svg msg
+rect : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 rect =
   trustedNode "rect"
 
 
 {-|-}
-use : List (Attribute msg) -> List (Svg msg) -> Svg msg
+use : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 use =
   trustedNode "use"
 
@@ -500,19 +498,19 @@ use =
 
 
 {-|-}
-feDistantLight : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feDistantLight : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feDistantLight =
   trustedNode "feDistantLight"
 
 
 {-|-}
-fePointLight : List (Attribute msg) -> List (Svg msg) -> Svg msg
+fePointLight : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 fePointLight =
   trustedNode "fePointLight"
 
 
 {-|-}
-feSpotLight : List (Attribute msg) -> List (Svg msg) -> Svg msg
+feSpotLight : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 feSpotLight =
   trustedNode "feSpotLight"
 
@@ -521,55 +519,55 @@ feSpotLight =
 
 
 {-|-}
-altGlyph : List (Attribute msg) -> List (Svg msg) -> Svg msg
+altGlyph : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 altGlyph =
   trustedNode "altGlyph"
 
 
 {-|-}
-altGlyphDef : List (Attribute msg) -> List (Svg msg) -> Svg msg
+altGlyphDef : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 altGlyphDef =
   trustedNode "altGlyphDef"
 
 
 {-|-}
-altGlyphItem : List (Attribute msg) -> List (Svg msg) -> Svg msg
+altGlyphItem : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 altGlyphItem =
   trustedNode "altGlyphItem"
 
 
 {-|-}
-glyph : List (Attribute msg) -> List (Svg msg) -> Svg msg
+glyph : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 glyph =
   trustedNode "glyph"
 
 
 {-|-}
-glyphRef : List (Attribute msg) -> List (Svg msg) -> Svg msg
+glyphRef : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 glyphRef =
   trustedNode "glyphRef"
 
 
 {-|-}
-textPath : List (Attribute msg) -> List (Svg msg) -> Svg msg
+textPath : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 textPath =
   trustedNode "textPath"
 
 
 {-|-}
-text_ : List (Attribute msg) -> List (Svg msg) -> Svg msg
+text_ : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 text_ =
   trustedNode "text"
 
 
 {-|-}
-tref : List (Attribute msg) -> List (Svg msg) -> Svg msg
+tref : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 tref =
   trustedNode "tref"
 
 
 {-|-}
-tspan : List (Attribute msg) -> List (Svg msg) -> Svg msg
+tspan : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 tspan =
   trustedNode "tspan"
 
@@ -578,37 +576,37 @@ tspan =
 
 
 {-|-}
-clipPath : List (Attribute msg) -> List (Svg msg) -> Svg msg
+clipPath : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 clipPath =
   trustedNode "clipPath"
 
 
 {-|-}
-colorProfile : List (Attribute msg) -> List (Svg msg) -> Svg msg
+colorProfile : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 colorProfile =
   trustedNode "colorProfile"
 
 
 {-|-}
-cursor : List (Attribute msg) -> List (Svg msg) -> Svg msg
+cursor : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 cursor =
   trustedNode "cursor"
 
 
 {-|-}
-filter : List (Attribute msg) -> List (Svg msg) -> Svg msg
+filter : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 filter =
   trustedNode "filter"
 
 
 {-|-}
-style : List (Attribute msg) -> List (Svg msg) -> Svg msg
+style : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 style =
   trustedNode "style"
 
 
 {-|-}
-view : List (Attribute msg) -> List (Svg msg) -> Svg msg
+view : Array (Attribute msg) -> Array (Svg msg) -> Svg msg
 view =
   trustedNode "view"
 
