@@ -1,9 +1,9 @@
 {
     "type": "package",
-    "name": "elm/svg",
+    "name": "gren-lang/svg",
     "summary": "Fast SVG, rendered with virtual DOM diffing",
     "license": "BSD-3-Clause",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "exposed-modules": {
         "SVG": [
             "Svg",
@@ -15,12 +15,12 @@
             "Svg.Lazy"
         ]
     },
-    "elm-version": "0.19.0 <= v < 0.20.0",
+    "gren-version": "0.1.0 <= v < 0.2.0",
     "dependencies": {
-        "elm/core": "1.0.0 <= v < 2.0.0",
-        "elm/html": "1.0.0 <= v < 2.0.0",
-        "elm/json": "1.0.0 <= v < 2.0.0",
-        "elm/virtual-dom": "1.0.0 <= v < 2.0.0"
+        "gren-lang/core": "1.0.0 <= v < 2.0.0",
+        "gren-lang/html": "1.0.0 <= v < 2.0.0",
+        "gren-lang/json": "1.0.0 <= v < 2.0.0",
+        "gren-lang/virtual-dom": "1.0.0 <= v < 2.0.0"
     },
     "test-dependencies": {}
 }
