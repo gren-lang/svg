@@ -86,7 +86,7 @@ It really helps!
 TODO: Update urls:
 -->
 [decoder]: /packages/gren-lang/json/latest/Json-Decode
-[gren-architecture-tutorial]:
+[gren-architecture-tutorial]: https://github.com/evancz/elm-architecture-tutorial/
 
 **Note:** This creates a [passive] event listener, enabling optimizations for
 touch, scroll, and wheel events in some browsers.
