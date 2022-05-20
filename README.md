@@ -7,9 +7,12 @@ The API is a bit wonky, but (1) it is manageable if you look through MDN docs li
 ## Example
 
 ```gren
+module Example exposing (main)
+
 import Svg exposing (..)
 import Svg.Attributes exposing (..)
 
+main : Svg msg
 main =
   svg
     [ width "120"
