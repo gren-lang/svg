@@ -42,13 +42,7 @@ SVG is great for data visualizations, and I really want people in the Gren commu
 
 ### Make visualization packages?
 
-<!---
-TODO: Remove reference to elm package? And maybe this whole section.
--->
-
-I think [`terezka/line-charts`](https://terezka.github.io/line-charts/) is a really great effort in this direction. Notice that [the docs](https://package.gren-lang.org/packages/terezka/line-charts/1.0.0/LineChart) present a really smooth learning path. Getting something on screen is really simple, and then it builds on that basic understanding to give you more capabilities. There are tons of examples as well. I really love seeing work like this!
-
-So if you are interested in doing something like this, I recommend:
+If you are interested in writing a data visualization package, I recommend:
 
 - Reading [The Visual Display of Quantitative Information](https://www.edwardtufte.com/tufte/books_vdqi) by Edward Tufte.
 - Learning about [designing for color blindness](https://www.alanzucconi.com/2015/12/16/color-blindness/)
